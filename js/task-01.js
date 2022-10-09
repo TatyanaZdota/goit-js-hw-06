@@ -1,4 +1,8 @@
-const list = document.querySelector ('categories');
-console.dir(categories);
-const childrens = [...categories.children];
-console.log(childrens);
+const itemsEl = document.querySelectorAll (".item");
+console.log('Number of categories:', itemsEl.length);
+itemsEl.forEach (function(category) {
+    console.log ('Category: ',category.firstElementChild.textContent);
+    console.log ('Elements:' ,category.lastElementChild.childElementCount)
+});
+
+
