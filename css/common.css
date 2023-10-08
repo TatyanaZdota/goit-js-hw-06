@@ -27,6 +27,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
- 
-
 }
+ .gallery-item{
+  animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+ }
+ @keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(10deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-10deg);
+  }}
+  
